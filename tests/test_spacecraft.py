@@ -2,14 +2,12 @@
 import unittest
 from spacecraft import Spacecraft, Direction
 
+
 class TestSpacecraft(unittest.TestCase):
     def test_initialization(self):
         spacecraft = Spacecraft()
         self.assertEqual(spacecraft.get_position(), (0, 0, 0))
         self.assertEqual(spacecraft.get_direction(), Direction.N)
-
-class TestSpacecraft(unittest.TestCase):
-    # ... (previous code)
 
     def test_move_forward(self):
         spacecraft = Spacecraft()
