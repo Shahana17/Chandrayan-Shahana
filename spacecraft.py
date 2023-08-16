@@ -19,3 +19,10 @@ class Spacecraft:
 
     def get_direction(self):
         return self.direction
+    def move_forward(self):
+        x, y, z = self.position
+        self.position = (x, y + 1, z)
+
+    def move_backward(self):
+        x, y, z = self.position
+        self.position = (x, y - 1, z)
