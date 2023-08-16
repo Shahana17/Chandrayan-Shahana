@@ -24,3 +24,8 @@ class TestSpacecraft(unittest.TestCase):
         spacecraft.move_backward()  # Initial position: (0, -1, 0)
         spacecraft.move_backward()  # Beyond galactic boundary, should stay at (0, -1, 0)
         self.assertEqual(spacecraft.get_position(), (0, -1, 0))
+
+
+
+if __name__ == '__main__':
+    unittest.main()
